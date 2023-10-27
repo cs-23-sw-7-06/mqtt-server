@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj": {}
+  },
+  "projects": {
+    "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj",
+        "projectName": "C#",
+        "projectPath": "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj",
+        "packagesPath": "/home/mast3r/.nuget/packages/",
+        "outputPath": "/home/mast3r/Documents/7th_semester/Project/server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mast3r/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MQTTnet": {
+              "target": "Package",
+              "version": "[4.3.1.873, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

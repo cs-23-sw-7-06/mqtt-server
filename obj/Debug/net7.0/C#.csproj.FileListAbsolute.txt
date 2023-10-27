@@ -1,0 +1,17 @@
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.csproj.AssemblyReference.cache
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.AssemblyInfoInputs.cache
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.AssemblyInfo.cs
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.csproj.CoreCompileInputs.cache
+/home/mast3r/Documents/7th_semester/Project/C#/bin/Debug/net7.0/C#
+/home/mast3r/Documents/7th_semester/Project/C#/bin/Debug/net7.0/C#.deps.json
+/home/mast3r/Documents/7th_semester/Project/C#/bin/Debug/net7.0/C#.runtimeconfig.json
+/home/mast3r/Documents/7th_semester/Project/C#/bin/Debug/net7.0/C#.dll
+/home/mast3r/Documents/7th_semester/Project/C#/bin/Debug/net7.0/C#.pdb
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.dll
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/refint/C#.dll
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.pdb
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.genruntimeconfig.cache
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/ref/C#.dll
+/home/mast3r/Documents/7th_semester/Project/C#/bin/Debug/net7.0/MQTTnet.dll
+/home/mast3r/Documents/7th_semester/Project/C#/obj/Debug/net7.0/C#.csproj.CopyComplete
