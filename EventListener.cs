@@ -38,9 +38,7 @@ public static class EventListener{
     }
 
     public static Task OnApplicationMessageNotConsumed(ApplicationMessageNotConsumedEventArgs args){
-        Console.ForegroundColor = ConsoleColor.Green;
         Log.GInfo("Application message received!");
-        Console.ForegroundColor = ConsoleColor.White;
         var payload = Encoding.UTF8.GetString(args.ApplicationMessage.PayloadSegment.ToArray(), 0, args.ApplicationMessage.PayloadSegment.Count);
         var topic = args.ApplicationMessage.Topic;
         var id = args.SenderId;

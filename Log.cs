@@ -9,7 +9,7 @@ public class Log{
     }
     public static void Info(object obj){
         Console.Write("\r");
-        Console.ForegroundColor = ConsoleColor.Black;
+        Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("Info:\r\t\t"+ obj);
         Console.ResetColor();
         Console.Write("> ");
