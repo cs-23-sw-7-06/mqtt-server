@@ -33,7 +33,7 @@ public class Program {
         Console.Write("> ");
         for(var line = Console.ReadLine(); line != "exit"; line = Console.ReadLine()){
             if(line == null) continue;
-            
+
             switch(line.Split(" ")[0]){
                 case "messages":
                     Console.WriteLine(EventListener.receivedMessages[EventListener.receivedMessages.Keys.First()][0]["topic"]);
@@ -56,6 +56,9 @@ public class Program {
                     break;
             }
             Console.Write("> ");
+        }
+        foreach(var device in program.server.GetClientsAsync().GetAwaiter().GetResult()){
+            device.DisconnectAsync();
         }
     }
 
