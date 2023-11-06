@@ -32,12 +32,14 @@ public class Program {
 
         Console.Write("> ");
         for(var line = Console.ReadLine(); line != "exit"; line = Console.ReadLine()){
+            if(line == null) continue;
+            
             switch(line.Split(" ")[0]){
                 case "messages":
                     Console.WriteLine(EventListener.receivedMessages[EventListener.receivedMessages.Keys.First()][0]["topic"]);
                     break;
                 case "broadcast":
-                    program.broadcast(line.Split(" ").Length > 1 ? line.Split(" ")[1] : "cmdline message", line.Split(" ").Length > 2 ? line.Split(" ")[2] : "broadcast message from command line");
+                    program.Broadcast(line.Split(" ").Length > 1 ? line.Split(" ")[1] : "cmdline message", line.Split(" ").Length > 2 ? line.Split(" ")[2] : "broadcast message from command line");
                     break;
                 case "list":
                     Console.WriteLine("Available devices:");
@@ -47,7 +49,7 @@ public class Program {
                     break;
                 case "unicast":
                     if(line.Split(" ").Length == 1) break;
-                    program.unicast(line.Split(" ")[1], line.Split(" ").Length > 2 ? line.Split(" ")[2] : "cmdline message", line.Split(" ").Length > 3 ? line.Split(" ")[3] : "unicast message from command line");
+                    program.Unicast(line.Split(" ")[1], line.Split(" ").Length > 2 ? line.Split(" ")[2] : "cmdline message", line.Split(" ").Length > 3 ? line.Split(" ")[3] : "unicast message from command line");
                     break;
                 default:
                     Console.WriteLine("No command defined by: "+line);
@@ -57,7 +59,7 @@ public class Program {
         }
     }
 
-    private void broadcast(string topic, string payload){
+    private void Broadcast(string topic, string payload){
         var message = new MqttApplicationMessage(){
             Topic = topic,
             PayloadSegment = Encoding.UTF8.GetBytes(payload)
@@ -68,7 +70,7 @@ public class Program {
         }
     }
 
-    private void unicast(string id, string topic, string payload){
+    private void Unicast(string id, string topic, string payload){
         var client = server.GetClientsAsync().GetAwaiter().GetResult().First(client => client.Id == id);
 
         var message = new MqttApplicationMessage(){

@@ -2,7 +2,7 @@ using System.Text;
 using MQTTnet.Server;
 
 public static class EventListener{
-    public static Dictionary<string, List<Dictionary<string, string>>> receivedMessages = new Dictionary<string, List<Dictionary<string, string>>>();
+    public static Dictionary<string, List<Dictionary<string, string>>> receivedMessages = new();
     
     public static Task OnNewConnection(ClientConnectedEventArgs args){
         Log.Info("ESP32 with ID: " + args.ClientId + " Connected!");
