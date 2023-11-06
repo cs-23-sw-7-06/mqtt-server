@@ -12,18 +12,21 @@ public class Program {
             .Build();
 
         var server = new MqttFactory().CreateMqttServer(options);
+        server.ClientConnectedAsync += OnNewConnection;
 
         server.StartAsync().GetAwaiter().GetResult();
 
-        Console.Write("end? > ");
         Console.ReadLine();
     }
 
-    public static void OnNewConnection(){
-        
+    public static Task OnNewConnection(ClientConnectedEventArgs args){
+        Console.WriteLine("Hello world from ESP over MQTT!");
+
+        return Task.CompletedTask;
     }
 
     public static void OnNewMessage(){
+        Console.WriteLine("New Message!");
 
     }
 }
