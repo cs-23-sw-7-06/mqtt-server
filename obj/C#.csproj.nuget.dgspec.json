@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj": {}
+    "/home/mast3r/Documents/7th_semester/Project/mqtt-server/C#.csproj": {}
   },
   "projects": {
-    "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj": {
+    "/home/mast3r/Documents/7th_semester/Project/mqtt-server/C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj",
+        "projectUniqueName": "/home/mast3r/Documents/7th_semester/Project/mqtt-server/C#.csproj",
         "projectName": "C#",
-        "projectPath": "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj",
+        "projectPath": "/home/mast3r/Documents/7th_semester/Project/mqtt-server/C#.csproj",
         "packagesPath": "/home/mast3r/.nuget/packages/",
-        "outputPath": "/home/mast3r/Documents/7th_semester/Project/server/obj/",
+        "outputPath": "/home/mast3r/Documents/7th_semester/Project/mqtt-server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mast3r/.nuget/NuGet/NuGet.Config"
@@ -57,7 +57,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.12, 7.0.12]"
+              "version": "[7.0.13, 7.0.13]"
             }
           ],
           "frameworkReferences": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
         }
       }
     }

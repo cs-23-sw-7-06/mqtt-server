@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nwRaJAO1Jmx+rEGgvd9GmQaq6UAfr0pKLU+JO+w5lELsUIkzfNho7JVRSlMzgkiXsZ+TLwYg732cIFthAwQYOQ==",
+  "dgSpecHash": "uOzkL4RRrOK9eYnQ4ISkeNhFMeH+MIwgjC4HRpgOiABas5a6idL+mdSoU4B60uTvsWCQ6ol/QUKbwuYcdZ+KcQ==",
   "success": true,
-  "projectFilePath": "/home/mast3r/Documents/7th_semester/Project/server/C#.csproj",
+  "projectFilePath": "/home/mast3r/Documents/7th_semester/Project/mqtt-server/C#.csproj",
   "expectedPackageFiles": [
     "/home/mast3r/.nuget/packages/mqttnet/4.3.1.873/mqttnet.4.3.1.873.nupkg.sha512",
-    "/home/mast3r/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+    "/home/mast3r/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.13/microsoft.aspnetcore.app.ref.7.0.13.nupkg.sha512"
   ],
   "logs": []
 }
