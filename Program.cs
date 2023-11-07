@@ -17,6 +17,7 @@ public class Program {
 
         server = new MqttFactory().CreateMqttServer(options);
         server.ClientConnectedAsync                 += EventListener.OnNewConnection;
+        server.ClientDisconnectedAsync              += EventListener.OnDisconnect;
         server.ClientAcknowledgedPublishPacketAsync += EventListener.OnNewMessage;
         server.ClientSubscribedTopicAsync           += EventListener.OnClientSubscribed;
         server.ClientUnsubscribedTopicAsync         += EventListener.OnClientUnsubscribed;

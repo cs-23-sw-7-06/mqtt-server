@@ -14,6 +14,12 @@ public static class EventListener{
         return Task.CompletedTask;
     }
 
+    public static Task OnDisconnect(ClientDisconnectedEventArgs args){
+        Log.Warning("ESP32 with ID: " + args.ClientId + " Disconnected!");
+
+        return Task.CompletedTask;
+    }
+
     public static Task OnNewMessage(ClientAcknowledgedPublishPacketEventArgs args){
         Log.Info("New Message!");
 
